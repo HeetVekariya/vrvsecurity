@@ -115,7 +115,7 @@ def count_failed_login_attempts(data: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
 
-    log = read_file(os.getcwd() + os.path.sep + 'log.txt')
+    log = read_file(os.getcwd() + os.path.sep + 'sample.log')
 
     ip_address_count = count_ip_address_freq(log["IP address"])
     endpoint_count = count_endpoint_freq(log["Endpoint"])
